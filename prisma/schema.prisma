@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  counselor
+  admin
+}
+
+enum LeadSource {
+  online
+  counselor
+}
+
+enum LeadStatus {
+  unclaimed
+  claimed
+}
+
+model User {
+  id            String         @id @default(uuid())
+  name          String
+  email         String         @unique
+  password      String
+  role          Role
+  createdAt     DateTime       @default(now())
+  leads         Lead[]
+  refreshTokens RefreshToken[]
+}
+
+model Lead {
+  id             String     @id @default(uuid())
+  name           String
+  email          String
+  phone          String?
+  courseInterest String
+  source         LeadSource @default(online)
+  notes          String?
+  status         LeadStatus @default(unclaimed)
+  counselorId    String?
+  counselor      User?      @relation(fields: [counselorId], references: [id])
+  createdAt      DateTime   @default(now())
+
+  @@index([status])
+  @@index([counselorId])
+}
+
+model RefreshToken {
+  id          String   @id @default(uuid())
+  token       String   @unique
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  expiresAt   DateTime
+  invalidated Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  @@index([userId])
+}

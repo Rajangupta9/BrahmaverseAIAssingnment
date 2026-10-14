@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "jetro": {
+      "type": "stdio",
+      "command": "C:\\Users\\praty\\.jetro\\runtime\\node-win32-x64.exe",
+      "args": [
+        "C:\\Users\\praty\\.jetro\\mcp-server\\index.js"
+      ],
+      "env": {
+        "JET_WORKSPACE": "d:\\brahmas",
+        "JET_API_URL": "https://api.jetro.ai",
+        "PATH": "C:\\Users\\praty\\.jetro\\runtime;C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.11.10-hotspot\\bin;c:\\Users\\praty\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\windows\\System32\\OpenSSH\\;C:\\MinGW\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs;C:\\Users\\praty\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\praty\\.dotnet\\tools;C:\\Users\\praty\\AppData\\Roaming\\npm;C:\\Users\\praty\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\Java\\jdk-21\\bin;C:\\Program Files\\Java\\jre-1.8\\bin;C:\\Program Files\\JetBrains\\PyCharm 2023.3.2\\bin;C:\\Program Files\\Wondershare\\Wondershare DemoCreator;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\Program Files\\MongoDB\\mongosh-2.3.1-win32-x64\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Go\\bin;C:\\Program Files (x86)\\Go\\bin;C:\\Program Files\\PowerShell\\7\\;C:\\Users\\praty\\.local\\bin;C:\\Users\\praty\\.cargo\\bin;$($env:APPDATA)\\npm;$env:PATH;C:\\Users\\praty\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\praty\\AppData\\Local\\Programs\\Antigravity\\bin;C:\\Users\\praty\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\praty\\go\\bin;C:\\Users\\praty\\AppData\\Local\\Programs\\Antigravity IDE\\bin;C:\\Users\\praty\\AppData\\Local\\Python\\bin;C:\\Users\\praty\\AppData\\Local\\Programs\\codecrafters;C:\\Users\\praty\\go\\bin;C:\\Users\\praty\\AppData\\Local\\Programs\\Kiro\\bin"
+      }
+    }
+  }
+}
